@@ -1,5 +1,1 @@
-#EmpathAI: Privacy-First Multimodal Affective Computing Interface
-1.INTRODUCTION:
-EmpathAI is a real-time, multimodal emotional support companion designed to humanize digital interactions. By integrating local computer vision with advanced Large Language Models (LLMs), the application enables an Artificial Intelligence system to detect human facial expressions and adapt its responses accordingly. This project aims to bridge the gap between static text-based chatbots and genuine empathetic communication, all while prioritizing user privacy through Edge Computing.
-2.PROBLEM STATEMENT:
-In the current digital landscape, mental health support is often expensive, stigmatized, or inaccessible. While traditional AI chatbots offer 24/7 availability, they suffer from a significant limitation: they are "blind." They process text input but miss the critical non-verbal cues—such as facial expressions and voice tone—that constitute the majority of human communication. Furthermore, users are increasingly hesitant to utilize emotion-aware tools due to privacy concerns regarding biometric video data being transmitted to cloud servers.
+
