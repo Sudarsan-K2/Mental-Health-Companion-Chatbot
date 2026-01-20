@@ -57,12 +57,15 @@ The application follows a decoupled Client-Server architecture optimized for low
 Follow these exact steps to run the project locally.
 
 ### Step 1: Configuration & Dependencies
-1.  Install the required Python packages by running the following command in your terminal:
+1.  **Install Dependencies:** This project requires several libraries for audio processing, database management, and AI inference. Install them all at once by running:
     ```bash
-    pip install fastapi uvicorn google-generativeai python-multipart requests
+    pip install -r requirements.txt
     ```
-2.  Open the file named `inference.py` (located in the backend folder).
-3.  Find the configuration line for the API Key and paste your Google Gemini API Key directly there:
+    *(Note: Ensure you have the `requirements.txt` file in your root directory containing packages like `fastapi`, `vosk`, `mysql-connector-python`, `sounddevice`, etc.)*
+
+2.  **API Key Setup:**
+    * Open the file named `inference.py` (located in the backend folder).
+    * Find the configuration line for the API Key and paste your Google Gemini API Key directly there:
     ```python
     # Inside inference.py
     genai.configure(api_key="YOUR_ACTUAL_API_KEY_HERE")
