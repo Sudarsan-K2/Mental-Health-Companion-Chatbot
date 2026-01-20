@@ -54,9 +54,65 @@ The application follows a decoupled Client-Server architecture optimized for low
 
 ## 6. Installation and Setup
 
-Follow these steps to deploy the project locally.
+Follow these exact steps to run the project locally.
 
-**Step 1: Clone the Repository**
+### Step 1: Configuration & Dependencies
+1.  Install the required Python packages by running the following command in your terminal:
+    ```bash
+    pip install fastapi uvicorn google-generativeai python-multipart requests
+    ```
+2.  Open the file named `inference.py` (located in the backend folder).
+3.  Find the configuration line for the API Key and paste your Google Gemini API Key directly there:
+    ```python
+    # Inside inference.py
+    genai.configure(api_key="YOUR_ACTUAL_API_KEY_HERE")
+    ```
+
+### Step 2: Running the Application
+You need to open **two separate terminal windows** to run the backend and frontend simultaneously.
+
+**Terminal 1 (Backend):**
+Navigate to the backend folder and start the API server:
 ```bash
-git clone [https://github.com/YOUR_USERNAME/EmpathAI.git](https://github.com/YOUR_USERNAME/EmpathAI.git)
-cd EmpathAI
+cd backend
+python app.py
+```
+*The backend server will start running.*
+
+**Terminal 2 (Frontend):**
+Open a **new** terminal window, navigate to the frontend folder, and start a local Python HTTP server:
+```bash
+cd frontend
+python -m http.server
+```
+*This will serve the frontend files (usually at port 8000).*
+
+### Step 3: Access the Interface
+1.  Open your web browser (Chrome/Edge/Firefox).
+2.  Go to the local address shown in Terminal 2 (usually `http://localhost:8000` or `http://127.0.0.1:8000`).
+3.  You will see the **Login Page**.
+4.  **Register** a new username and password.
+5.  **Login** with your credentials to access the main dashboard.
+## 7. Usage Guide
+1.  **Permissions:** Allow the browser to access the Webcam and Microphone when prompted.
+2.  **Interaction:** Speak clearly or type into the chat box. Ensure your face is well-lit for accurate detection.
+3.  **Real-Time Feedback:** Observe the "Current Emotion" indicator on the dashboard, which updates instantly as your expression changes.
+4.  **Response:** The AI will reply via text and voice, with a tone calibrated to your detected emotion.
+
+## 8. Future Scope
+* **Voice Prosody Analysis:** We plan to integrate audio processing algorithms to detect stress markers in voice pitch and speed, adding another layer of emotional data.
+* **Long-Term Memory (RAG):** Implementation of Vector Databases to allow the AI to remember past conversations, enabling long-term therapeutic progress tracking.
+* **Wearable Integration:** Future versions will sync with smartwatches to correlate physiological data (like heart rate) with emotional states for a holistic health view.
+
+**Disclaimer:** This project is a prototype for an emotional support assistant and is not a replacement for professional medical advice or therapy.## 7. Usage Guide
+1.  **Permissions:** Allow the browser to access the Webcam and Microphone when prompted.
+2.  **Interaction:** Speak clearly or type into the chat box. Ensure your face is well-lit for accurate detection.
+3.  **Real-Time Feedback:** Observe the "Current Emotion" indicator on the dashboard, which updates instantly as your expression changes.
+4.  **Response:** The AI will reply via text and voice, with a tone calibrated to your detected emotion.
+
+## 8. Future Scope
+* **Voice Prosody Analysis:** We plan to integrate audio processing algorithms to detect stress markers in voice pitch and speed, adding another layer of emotional data.
+* **Long-Term Memory (RAG):** Implementation of Vector Databases to allow the AI to remember past conversations, enabling long-term therapeutic progress tracking.
+* **Wearable Integration:** Future versions will sync with smartwatches to correlate physiological data (like heart rate) with emotional states for a holistic health view.
+
+**Disclaimer:** This project is a prototype for an emotional support assistant and is not a replacement for professional medical advice or therapy.
