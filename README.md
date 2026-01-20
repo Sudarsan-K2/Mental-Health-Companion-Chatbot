@@ -93,26 +93,12 @@ python -m http.server
 3.  You will see the **Login Page**.
 4.  **Register** a new username and password.
 5.  **Login** with your credentials to access the main dashboard.
+
 ## 7. Usage Guide
 1.  **Permissions:** Allow the browser to access the Webcam and Microphone when prompted.
 2.  **Interaction:** Speak clearly or type into the chat box. Ensure your face is well-lit for accurate detection.
 3.  **Real-Time Feedback:** Observe the "Current Emotion" indicator on the dashboard, which updates instantly as your expression changes.
 4.  **Response:** The AI will reply via text and voice, with a tone calibrated to your detected emotion.
 
-## 8. Future Scope
-* **Voice Prosody Analysis:** We plan to integrate audio processing algorithms to detect stress markers in voice pitch and speed, adding another layer of emotional data.
-* **Long-Term Memory (RAG):** Implementation of Vector Databases to allow the AI to remember past conversations, enabling long-term therapeutic progress tracking.
-* **Wearable Integration:** Future versions will sync with smartwatches to correlate physiological data (like heart rate) with emotional states for a holistic health view.
-
-**Disclaimer:** This project is a prototype for an emotional support assistant and is not a replacement for professional medical advice or therapy.## 7. Usage Guide
-1.  **Permissions:** Allow the browser to access the Webcam and Microphone when prompted.
-2.  **Interaction:** Speak clearly or type into the chat box. Ensure your face is well-lit for accurate detection.
-3.  **Real-Time Feedback:** Observe the "Current Emotion" indicator on the dashboard, which updates instantly as your expression changes.
-4.  **Response:** The AI will reply via text and voice, with a tone calibrated to your detected emotion.
-
-## 8. Future Scope
-* **Voice Prosody Analysis:** We plan to integrate audio processing algorithms to detect stress markers in voice pitch and speed, adding another layer of emotional data.
-* **Long-Term Memory (RAG):** Implementation of Vector Databases to allow the AI to remember past conversations, enabling long-term therapeutic progress tracking.
-* **Wearable Integration:** Future versions will sync with smartwatches to correlate physiological data (like heart rate) with emotional states for a holistic health view.
 
 **Disclaimer:** This project is a prototype for an emotional support assistant and is not a replacement for professional medical advice or therapy.
